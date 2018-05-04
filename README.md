@@ -1,12 +1,13 @@
 # chuanglan-php
 chuanglan-php-demo
 
+请先阅读253云通讯PaaS短信云接口说明（JSON版） 
 
-可以跟具自己的需要选择 php的demo来插入到php环境当中使用 
+然后可以根据自己的需要选择 php的demo来插入到php环境当中使用 
 
 使用之前请先跟对应商务要API账号和密码还有接口地址
 
-创蓝php demo 文档说明
+创蓝php demo php文件说明
 
 sendsms-----普通短信发送
 
