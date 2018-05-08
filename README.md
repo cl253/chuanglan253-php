@@ -37,7 +37,7 @@ sendVariableSMS.zip--------变量短信发送
 ## 创蓝客服
 - [客服链接](https://www.253.com/kefu253/)
 
-[客服链接 ](https://www.253.com/kefu253/)
+
 
 ## 文档链接
 - [api文档](https://www.253.com/#/document/1)
