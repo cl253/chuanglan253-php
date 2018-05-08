@@ -31,7 +31,9 @@ sendVariableSMS.zip--------变量短信发送
 具体详情请阅读-->253云通讯PaaS短信云接口说明（JSON版）.docx
 
 ## 联系我们
-[客服链接 ](https://www.253.com/kefu253="name":"github"})
+
+
+[创蓝客服 链接](https://www.253.com/kefu253={"name":"github"})
 
 
 
