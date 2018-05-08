@@ -24,12 +24,27 @@ chuanglan-php-demo
 
 1、普通发送(批量发送短信使用英文逗号间隔，事例如下)
 //【253云通讯】为签名 用“【】”来识别签名 如果您想更换自己的签名 请前往253云通讯自助通平台报备签名或者询找您的商务负责人报备
+
 require_once 'sendSMSAPI.php';
+
 $clapi  = new ChuanglanSmsApi();
+
 $code = mt_rand(100000,999999);
+
 $result = $clapi->sendSMS('153******25,189****1862','【253云通讯】您好，您的验证码是'.$code ); 
 
-2、变量发送（）
+2、变量发送（批量发送参数组使用英文分好间隔，事例如下）
+ //【253云通讯】为签名 用“【】”来识别签名 如果您想更换自己的签名 请前往253云通讯自助通平台报备签名
+ 
+require_once 'sendVariableSMSAPI.php';
+
+$clapi  = new ChuanglanSmsApi();
+
+$msg = '【253云通讯】{$var},您好，您发送的内容是{$var}';
+
+$params = '153****1520,李先生,2017-04-12;158****9999,张先生，145444';
+
+$result = $clapi->sendVariableSMS($msg, $params);
 
 
 
