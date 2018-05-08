@@ -30,4 +30,4 @@ sendVariableSMS.zip--------变量短信发送
 
 具体详情请阅读-->253云通讯PaaS短信云接口说明（JSON版）.docx
 
-如有问题请联系我们:http://www.253.com
+对接中出现问题 欢迎咨询:www.253.com
