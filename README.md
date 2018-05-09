@@ -26,16 +26,11 @@ if(!is_null(json_decode($result))){
 	$output=json_decode($result,true);
 	
 	if(isset($output['code'])  && $output['code']=='0'){
-		
 		echo $result;
-	
-	}else{
-		
+	}else{	
 		echo $output['errorMsg'];
 	}
-
 }else{
-
 	echo $result; 
 }
 ```
@@ -65,17 +60,12 @@ if(!is_null(json_decode($result))){
 	$output=json_decode($result,true);
 	
 	if(isset($output['code'])  && $output['code']=='0'){
-		
 		echo $result;
-	
 	}else{
 		echo $output['errorMsg'];
 	}
-
-}else{
-		
+}else{	
 		echo $result;
-
 }
 ```
 **注释**：params参数包含手机号码,变量1,变量2；
