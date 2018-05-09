@@ -107,4 +107,4 @@ sendVariableSMS.zip--------变量短信发送
 
 
 ## 文档链接
-- [api文档](https://www.253.com/#/document/1)
+- [api文档](https://www.253.com/#/document/api_doc/zz)
