@@ -7,6 +7,10 @@
 
 1、普通发送(批量发送短信使用英文逗号间隔，示例如下)
 ```php
+header(
+"Content-type:text/html; charset=UTF-8"
+);
+
 require_once 'sendSMSAPI.php';
 
 $clapi  = new ChuanglanSmsApi();
@@ -40,6 +44,10 @@ if(!is_null(json_decode($result))){
 
 2、变量发送（批量发送短信，参数组使用英文分好间隔，示例如下）
  ```php
+ header(
+"Content-type:text/html; charset=UTF-8"
+);
+
 require_once 'sendVariableSMSAPI.php';
 
 $clapi  = new ChuanglanSmsApi();
