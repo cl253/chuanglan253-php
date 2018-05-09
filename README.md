@@ -6,7 +6,7 @@ chuanglan-php-demo
 ---------------------------------------------短信发送示例-------------------------------------------------
 
 1、普通发送(批量发送短信使用英文逗号间隔，示例如下)
-
+```php
 require_once 'sendSMSAPI.php';
 
 $clapi  = new ChuanglanSmsApi();
@@ -34,12 +34,12 @@ if(!is_null(json_decode($result))){
 
 	echo $result; 
 }
-
+```
 注释：sendSMS方法中包含手机号码，短信内容，msg=签名+短信模板
 
 
 2、变量发送（批量发送短信，参数组使用英文分好间隔，示例如下）
- 
+ ```php
 require_once 'sendVariableSMSAPI.php';
 
 $clapi  = new ChuanglanSmsApi();
@@ -69,7 +69,7 @@ if(!is_null(json_decode($result))){
 		echo $result;
 
 }
-
+```
 注释：params参数包含手机号码,变量1,变量2；
 
 
