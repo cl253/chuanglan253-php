@@ -35,13 +35,13 @@ if(!is_null(json_decode($result))){
 注释：sendSMS方法中包含phone 手机号码，msg 短信内容；其中 msg=签名+短信模板
 
 
-**  群发**
+**群发**
  ```php
 $result = $clapi->sendSMS('189*****139,153*****584','【253云通讯】您好！验证码是:'.$code);
 ```
 注释：单发与群发使用同一个接口地址，批量请求手机号使用英文逗号间隔。一个批量<=1000
 
-**  请求方式**
+**请求方式**
 ```php
 //json格式
 curl_setopt( $ch, CURLOPT_HTTPHEADER, array(
