@@ -7,12 +7,15 @@
 
 1、单发
 ```php
+//设置编码格式为utf-8
 header(
 "Content-type:text/html; charset=UTF-8"
 );
-
+//引入文件
 require_once 'sendSMSAPI.php';
+//php实例化类
 $clapi  = new ChuanglanSmsApi();
+//生成随机数（6位数）
 $code = mt_rand(100000,999999);
 
 //设置您要发送的内容：其中“【】”中括号为运营商签名符号，多签名内容前置添加提交
