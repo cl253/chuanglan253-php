@@ -22,9 +22,7 @@ $code = mt_rand(100000,999999);
 $result = $clapi->sendSMS('189*****139','【253云通讯】您好！验证码是:'.$code);
 
 if(!is_null(json_decode($result))){
-
 	$output=json_decode($result,true);
-	
 	if(isset($output['code'])  && $output['code']=='0'){
 		echo $result;
 	}else{	
