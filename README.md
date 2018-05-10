@@ -11,9 +11,9 @@
 header(
 "Content-type:text/html; charset=UTF-8"
 );
-//引入文件
+//引入 sendSMSAPI.php 文件
 require_once 'sendSMSAPI.php';
-//php实例化类
+//实例化 ChuanglanSmsApi 类
 $clapi  = new ChuanglanSmsApi();
 //生成随机数（6位数）
 $code = mt_rand(100000,999999);
