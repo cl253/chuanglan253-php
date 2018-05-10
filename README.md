@@ -55,7 +55,7 @@ sendVariableSMS.zip--------变量短信发送
 
 下载完成 将demo放入到项目环境中、填写示例中的参数 请求API账号密码以及接口地址请登录zz.253.com获取
 
-具体详情请阅读-->253云通讯PaaS短信云接口说明（JSON版）.docx
+Demo为储存测试代码文件夹；Doc为储存word文档说明
 
 
 
