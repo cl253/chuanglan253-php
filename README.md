@@ -36,28 +36,7 @@ if(!is_null(json_decode($result))){
 
 2、批量发送（手机号码使用英文逗号间隔）
  ```php
-header(
-"Content-type:text/html; charset=UTF-8"
-);
-require_once 'sendSMSAPI.php';
-$clapi  = new ChuanglanSmsApi();
-$code = mt_rand(100000,999999);
-
-//设置您要发送的内容：其中“【】”中括号为运营商签名符号，多签名内容前置添加提交
 $result = $clapi->sendSMS('189*****139,153*****584','【253云通讯】您好！验证码是:'.$code);
-
-if(!is_null(json_decode($result))){
-
-	$output=json_decode($result,true);
-	
-	if(isset($output['code'])  && $output['code']=='0'){
-		echo $result;
-	}else{	
-		echo $output['errorMsg'];
-	}
-}else{
-	echo $result; 
-}
 ```
 **注释**：sendSMS方法中包含phone //手机号码，msg //短信内容；其中 msg=签名+短信模板
 
