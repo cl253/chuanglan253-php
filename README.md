@@ -34,7 +34,7 @@ if(!is_null(json_decode($result))){
 	echo $result; 
 }
 ```
-**注释**：sendSMS方法中包含phone //手机号码，msg //短信内容；其中 msg=签名+短信模板
+**注释**：sendSMS方法中包含phone 手机号码，msg 短信内容；其中 msg=签名+短信模板
 
 
 2、群发
