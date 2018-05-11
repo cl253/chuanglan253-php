@@ -60,7 +60,7 @@ curl_setopt( $ch, CURLOPT_HTTPHEADER, array(
 
 3、balanceQuery.zip-----------余额查询
 
-Demo为储存测试代码文件夹；Doc为储存word文档说明
+Demo为储存测试代码文件夹；Doc为储存word文档说明；zip结尾的文件为代码包。
 
 
 
