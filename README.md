@@ -60,7 +60,7 @@ curl_setopt( $ch, CURLOPT_HTTPHEADER, array(
 
 3、sms_query_balance.php-----------余额查询
 
-demo/API为储存测试代码文件夹；doc为储存word文档说明；
+注释：demo/API为储存测试代码文件夹；doc为储存word文档说明；
 
 
 
