@@ -51,6 +51,13 @@ curl_setopt( $ch, CURLOPT_HTTPHEADER, array(
 ```
 注释：此接口统一使用json格式进行封装，采用post方式提交请求
 
+## 源码说明 
+
+- 编码要求为utf-8,请先将编辑器底层语言设置为utf-8
+
+- 带有特殊字符的内容无法直接提交,需先将特殊字符进行urlencode编码后方能提交
+
+- 开发API可参考单元测试 doc/253云通讯PaaS短信云接口说明（JSON版）.docx
 
 ## 文件配置说明
 
