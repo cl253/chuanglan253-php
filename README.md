@@ -54,13 +54,13 @@ curl_setopt( $ch, CURLOPT_HTTPHEADER, array(
 
 ## ---------------------------------文件配置说明--------------------------------
 
-1、sendSMS----------------普通短信发送
+1、sms_send.php----------------普通短信发送
 
-2、sms_send_variable--------变量短信发送 
+2、sms_send_variable.php-----------变量短信发送 
 
-3、balanceQuery-----------余额查询
+3、sms_query_balance.php-----------余额查询
 
-demo为储存测试代码文件夹；doc为储存word文档说明；
+demo/API为储存测试代码文件夹；doc为储存word文档说明；
 
 
 
