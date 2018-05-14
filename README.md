@@ -54,13 +54,13 @@ curl_setopt( $ch, CURLOPT_HTTPHEADER, array(
 
 ## ---------------------------------文件配置说明--------------------------------
 
-1、sendSMS.zip----------------普通短信发送
+1、sendSMS----------------普通短信发送
 
-2、sendVariableSMS.zip--------变量短信发送 
+2、sendVariableSMS--------变量短信发送 
 
-3、balanceQuery.zip-----------余额查询
+3、balanceQuery-----------余额查询
 
-Demo为储存测试代码文件夹；Doc为储存word文档说明；zip结尾的文件为代码包。
+demo为储存测试代码文件夹；doc为储存word文档说明；
 
 
 
@@ -70,7 +70,7 @@ Demo为储存测试代码文件夹；Doc为储存word文档说明；zip结尾的
 [创蓝客服 链接](https://kefu253.udesk.cn/im_client/?web_plugin_id=47820={"name":"github"})
 
 
-<img src="Doc/kefu.jpg" width="20%" alt="创蓝客服"/>
+<img src="doc/kefu.jpg" width="20%" alt="创蓝客服"/>
 
 
 
