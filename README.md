@@ -61,11 +61,11 @@ curl_setopt( $ch, CURLOPT_HTTPHEADER, array(
 
 ## 文件配置说明
 
-1、sms_send.php----------------普通短信发送
+- sms_send.php----------------普通短信发送
 
-2、sms_send_variable.php-----------变量短信发送 
+- sms_send_variable.php-----------变量短信发送 
 
-3、sms_query_balance.php-----------余额查询
+- sms_query_balance.php-----------余额查询
 
 注释：demo/API为储存测试代码文件夹；doc为储存word文档说明；
 
