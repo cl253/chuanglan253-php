@@ -56,7 +56,7 @@ curl_setopt( $ch, CURLOPT_HTTPHEADER, array(
 
 1、sendSMS----------------普通短信发送
 
-2、sendVariableSMS--------变量短信发送 
+2、sms_send_variable--------变量短信发送 
 
 3、balanceQuery-----------余额查询
 
