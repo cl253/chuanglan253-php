@@ -51,7 +51,7 @@ curl_setopt( $ch, CURLOPT_HTTPHEADER, array(
 ```
 注释：此接口统一使用json格式进行封装，采用post方式提交请求
 
-## 配置说明
+## 文件说明
 
 - sms_send.php----------------普通短信发送
 
