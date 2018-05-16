@@ -16,7 +16,8 @@ if(!is_null(json_decode($result))){
 	
 	$output=json_decode($result,true);
 	if(isset($output['balance'])){
-		echo '余额	' . $output['balance'].'	条' ;
+		echo $result;
+		//echo '余额	' . $output['balance'].'	条' ;
 	}else{
 		echo $output['errorMsg'];
 	}
