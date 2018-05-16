@@ -8,12 +8,10 @@
  * 该代码仅供学习和研究创蓝接口使用，只是提供一个参考。
  * 
  */
-//【幽枫科技】岁月如流水，{$var}，多少习惯成自然。{$var}，但{$var}的生活，则是{$var}的{$var}。养活{$var}只需要{$var}，让自己{$var}却需要{$var}。幸福{$var}感受{$var}不同，{$var}不同，{$var}的{$var}不同，{$var}不同，{$var}就不同。{$var}的智慧，{$var}让你懂得{$var}，更是让你{$var}何时该执着，{$var}放手。
+
 require_once 'ChuanglanSmsHelper/ChuanglanSmsApi.php';
 $clapi  = new ChuanglanSmsApi();
-$msg = '【253云通讯】{$var},您好，您发送的内容是{$var}';
-
-// $params = '18917407239,多少付出成习惯,生命是自然的赏赐,幸福,智慧,赏赐,自己,勤劳,幸福,智慧,是一种,处境,追求,追求,结果,心态,感受,真正,不仅是,追求,明白,何时该';
+$msg = '【253云通讯】尊敬的{$var}用户,您好，欢迎您成为{$var}中的一员';
 $params = '18317156692,001,001;18917407239,122,115;15333333333,123,555';
 
 $result = $clapi->sendVariableSMS($msg, $params);
