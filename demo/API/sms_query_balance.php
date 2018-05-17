@@ -24,3 +24,7 @@ if(!is_null(json_decode($result))){
 }else{
 		echo $result;
 }
+
+
+
+?>
