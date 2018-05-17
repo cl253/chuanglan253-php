@@ -11,8 +11,8 @@
 
 require_once 'ChuanglanSmsHelper/ChuanglanSmsApi.php';
 $clapi  = new ChuanglanSmsApi();
-$msg = '【253云通讯】尊敬的{$var}用户,您好，欢迎您成为{$var}中的一员';
-$params = '18317156692,001,001;18917407239,122,115;15333333333,123,555';
+$msg = '【253云通讯】您好，您的验证码是{$var},请在{$var}分钟内完成注册，感谢您的使用。';
+$params = '18300000000,153642,5;18900000000,154789,5;15333333333,458753,5';
 
 $result = $clapi->sendVariableSMS($msg, $params);
 
@@ -29,3 +29,9 @@ if(!is_null(json_decode($result))){
 }else{
 		echo $result;
 }
+
+
+
+
+
+?>
