@@ -13,7 +13,7 @@ require_once 'ChuanglanSmsHelper/ChuanglanSmsApi.php';
 $clapi  = new ChuanglanSmsApi();
 $code = mt_rand(100000,999999);
  //设置您要发送的内容：其中“【】”中括号为运营商签名符号，多签名内容前置添加提交
-$result = $clapi->sendSMS('15367327820','【253云通讯】您好！验证码是:'.$code);
+$result = $clapi->sendSMS('15300000000','【253云通讯】您好！验证码是:'.$code);
 if(!is_null(json_decode($result))){
 	$output=json_decode($result,true);
 	if(isset($output['code'])  && $output['code']=='0'){
@@ -24,3 +24,9 @@ if(!is_null(json_decode($result))){
 }else{
 		echo $result; 
 }
+
+
+
+
+
+?>
