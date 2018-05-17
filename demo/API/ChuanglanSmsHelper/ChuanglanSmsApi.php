@@ -86,26 +86,6 @@ class ChuanglanSmsApi {
 		return $result;
 	}
 
-
-	/*
-	*
-	* 拉取状态报告
-	* 
-	*/
-
-    public function ZHUANGT(){
-    	global $chuanglan_config;
-    	//查询参数
-		$postArr = array ( 
-		    'account'  =>  self::API_ACCOUNT,
-			'password' => self::API_PASSWORD,
-			'count'=>"20",
-		
-		);
-		$result = $this->curlPost(self::API_ZHUANGTAI, $postArr);
-		return $result;
-
-    }
 	/**
 	 * 通过CURL发送HTTP请求
 	 * @param string $url  //请求URL
@@ -115,7 +95,6 @@ class ChuanglanSmsApi {
 	 */
 	private function curlPost($url,$postFields){
 		$postFields = json_encode($postFields);
-		//var_dump($postFields);die();
 		$ch = curl_init ();
 		curl_setopt( $ch, CURLOPT_URL, $url ); 
 		curl_setopt( $ch, CURLOPT_HTTPHEADER, array(
@@ -146,3 +125,8 @@ class ChuanglanSmsApi {
 	
 }
 
+
+
+
+
+?>
