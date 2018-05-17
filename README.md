@@ -53,11 +53,13 @@ curl_setopt( $ch, CURLOPT_HTTPHEADER, array(
 
 ## 文件说明
 
-- sms_send.php----------------普通短信发送
+- ChuanglanSmsHelper/ChuanglanSmsApi.php--------通用文件
 
-- sms_send_variable.php-----------变量短信发送 
+- sms_send.php-----------普通短信发送
 
-- sms_query_balance.php-----------余额查询
+- sms_send_variable.php----------变量短信发送 
+
+- sms_query_balance.php----------余额查询
 
 - demo/API为储存测试代码文件夹；doc为储存word文档说明；
 
