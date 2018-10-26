@@ -43,7 +43,7 @@ class ChuanglanSmsApi {
 			'phone' => $mobile,
 			'report' => $needstatus,
 
-        );
+       		);
 		$result = $this->curlPost( self::API_SEND_URL, $postArr);
 		return $result;
 	}
@@ -55,7 +55,7 @@ class ChuanglanSmsApi {
 	 * @param string $params 	最多不能超过1000个参数组
 	 */
 	public function sendVariableSMS( $msg, $params) {
-		global $chuanglan_config;
+		
 		//创蓝接口参数
 		$postArr = array (
 			'account'  =>  self::API_ACCOUNT,
@@ -63,7 +63,7 @@ class ChuanglanSmsApi {
 			'msg' => $msg,
 			'params' => $params,
 			'report' => 'true'
-        );
+        	);
 		
 		$result = $this->curlPost( self::API_VARIABLE_URL, $postArr);
 		return $result;
@@ -75,11 +75,10 @@ class ChuanglanSmsApi {
 	 *  查询地址
 	 */
 	public function queryBalance() {
-		global $chuanglan_config;
 		
 		//查询参数
 		$postArr = array ( 
-		    'account'  =>  self::API_ACCOUNT,
+		        'account'  =>  self::API_ACCOUNT,
 			'password' => self::API_PASSWORD,
 		);
 		$result = $this->curlPost(self::API_BALANCE_QUERY_URL, $postArr);
