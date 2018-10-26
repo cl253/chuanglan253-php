@@ -42,7 +42,6 @@ class ChuanglanSmsApi {
 			'msg' => urlencode($msg),
 			'phone' => $mobile,
 			'report' => $needstatus,
-
        		);
 		$result = $this->curlPost( self::API_SEND_URL, $postArr);
 		return $result;
