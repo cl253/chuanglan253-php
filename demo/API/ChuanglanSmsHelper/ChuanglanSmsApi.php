@@ -104,10 +104,10 @@ class ChuanglanSmsApi {
 		curl_setopt($ch, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4); //若果报错 name lookup timed out 报错时添加这一行代码
 		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
 		curl_setopt( $ch, CURLOPT_POST, 1 );
-        curl_setopt( $ch, CURLOPT_POSTFIELDS, $postFields);
-        curl_setopt( $ch, CURLOPT_TIMEOUT,60); 
-        curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, 0);
-        curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, 0);
+         	curl_setopt( $ch, CURLOPT_POSTFIELDS, $postFields);
+       		curl_setopt( $ch, CURLOPT_TIMEOUT,60); 
+        	curl_setopt( $ch, CURLOPT_SSL_VERIFYHOST, 0);
+        	curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, 0);
 		$ret = curl_exec ( $ch );
         if (false == $ret) {
             $result = curl_error(  $ch);
